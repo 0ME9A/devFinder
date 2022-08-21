@@ -1,0 +1,25 @@
+@mixin size($w: auto, $h: auto, $bg: transparent)
+    width: $w
+    height: $h
+    background-color: $bg
+@mixin flex($dir: row, $js: start, $aln: flex-start, $gp: 0, $wrap: nowrap)
+    display: flex
+    flex-direction: $dir
+    justify-content: $js
+    align-items: $aln
+    gap: $gp
+    flex-wrap: $wrap
+@mixin text($fs: 1rem, $clr: white, $fw: normal, $tranform: none)
+    font-size: $fs
+    color: $clr
+    font-weight: $fw
+    text-transform: $tranform
+@mixin btn($pd: 5px 15px, $bdr: 5px solid white, $bg: $color-primary)
+    padding: $pd
+    border: $bdr
+    background-color: $bg
+@mixin img($w: auto, $h: auto, $object: cover, $bg: transparent)
+    width: $w
+    height: $h
+    object-fit: $object
+    background: $bg

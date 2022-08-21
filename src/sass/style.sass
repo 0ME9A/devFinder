@@ -1,0 +1,196 @@
+@import '../sass/color'
+@import '../sass/theme'
+@import '../sass/mixin'
+
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Roboto Mono', monospace
+  border-radius: 15px
+  transition: .3s
+  background: 'navy'
+  scroll-behavior: smooth
+  text-decoration: none !important
+  @include text(16px, $color-text-90, lighter, capitalize )
+
+
+
+.root-child
+    @include size(100%, 100vh, $color-bg-15)
+    @include flex($js: center, $aln: center)
+    border-radius: 0
+    overflow-y: auto
+
+    .main-div
+        @include size($w: 700px)
+        @include flex($dir: column, $gp: 15px )
+        padding: 25px
+
+        .menu, .search, .profile
+            @include size($w: 100%)
+
+        .menu
+            @include flex($js: space-between)
+            padding: 15px 0
+
+            h1
+                @include text($fs: 1.2rem, $fw: 700)
+
+            button
+                @include text($clr: $color-text-90)
+                @include flex($gp: 10px)
+                background: transparent
+                border-color: transparent
+                padding: 5px 10px
+
+                &:hover
+                    border-color: $color-text-90
+
+                span
+                    font-size: .8rem
+
+        .search
+            form
+                display: flex
+                position: relative
+                background: $color-bg-20
+
+                input, button
+                    border: none
+                    border-radius: 0
+
+                    &:focus
+                        outline: none
+
+                input
+                    @include size($w: 100% , $bg:rgba(30, 44, 73, 0) )
+                    @include text($clr: $color-text-90, $tranform: none)
+                    padding: 15px 25px
+                    border-radius: 15px 0 0 15px
+                    position: relative
+
+                    &:focus
+                        background-color: $color-bg-20
+
+                label
+                    @include flex($aln: center, $gp: 15px)
+                    padding-left: 25px
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    opacity: .5
+
+                    .icon
+                        @include size(1.2rem, 1.2rem)
+                        fill: $color-primary
+
+                button
+                    @include btn($bdr: 5px solid $color-bg-20, $bg: $color-highlite-50 )
+                    @include text($clr: $color-text-90, $fw: 400, $tranform: capitalize)
+                    border-radius: 15px
+
+        .profile
+            @include flex($gp: 15px)
+            background: $color-bg-20
+            padding: 35px
+            border: none
+
+            .profile-img
+                img
+                    @include img($w: 100px, $h: 100px, $object: cover)
+                    border-radius: 50%
+
+            .profile-data
+                width: 100%
+
+                .name-j-d
+                    @include flex( $js: space-between, $aln: center)
+                    text-transform: capitalize
+
+                    h1
+                        @include text($fs: 1.5rem, $fw: bold)
+
+                    span
+                        @include text($fs: .8rem, $clr: grey)
+
+                .userid
+                    span
+                        @include text($fs: .8rem, $clr: $color-primary)
+
+                .bio
+                    padding: 25px 0px
+
+                    p
+                        @include text($fs: .9rem, $fw: lighter, $tranform: none)
+
+                .rff
+                    background: $color-bg-10
+                    padding: 20px 25px
+                    display: flex
+
+                    .row
+                        width: calc( 100% / 3)
+
+                        h1
+                            font-size: .8rem
+
+                        h2
+                            font-weight: 600
+                            padding-top: 5px
+
+                .git-links
+                    @include flex($wrap: wrap)
+                    padding-top: 15px
+
+                    .cell
+                        @include flex($aln: center)
+                        width: calc( 100% / 2 )
+
+                        .icon
+                            padding: 5px
+                            padding-right: 10px
+
+                            .icon-tag
+                                @include size(1.2rem, 1.2rem)
+
+                        span, a
+                            @include text(.8rem, $clr: $color-text-90)
+
+        // Error style
+        .profile
+            .error, .loading
+                strong
+                    @include text($clr: $color-primary, $fw: 800)
+
+                h1
+                    font-size: 2rem
+
+            // Loading style
+            .loading
+                animation: fadein 1s linear infinite
+
+                strong
+                    color: $color-text-90
+
+            @keyframes fadein
+                0%
+                    opacity: 0
+                50%
+                    opacity: 1
+                100%
+                    opacity: 0
+
+@media screen and (max-width: 700px)
+    *
+        font-size: 14px
+
+    #root
+        .main-div
+            .profile
+                flex-direction: column
+
+                .profile-data
+                    .name-j-d
+                        @include flex($dir: column, $aln: flex-start)
