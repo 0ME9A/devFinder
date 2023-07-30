@@ -13,7 +13,7 @@ const Searchbox = ({setApi, theme}) => {
             setApi(error)
         })
     }
-    
+
     const handleSubmit = (e) => {
         e.preventDefault()
         fetchApi(inputVal)
@@ -23,7 +23,6 @@ const Searchbox = ({setApi, theme}) => {
         setInputVal(e.target.value)
     }
 
-    console.log(theme)
     useEffect(() => {
         fetchApi('0me9a')
     }, [])
@@ -42,6 +41,7 @@ const Searchbox = ({setApi, theme}) => {
                     value={inputVal}
                     onChange={(e) => handleChange(e)}
                     placeholder={'   Search Github username...'}
+                    required
                 />
                 <button type="submit" title="search">search</button>
             </form>
