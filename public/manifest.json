@@ -1,0 +1,10 @@
+{
+    "name": "GitHub Developer Finder",
+    "short_name": "Dev Finder",
+    "description": "Find talented GitHub developers for your projects.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000"
+  }
+  

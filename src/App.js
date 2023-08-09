@@ -1,12 +1,8 @@
-import './sass/style.sass';
 import Home from './Components/Home';
+import './sass/style.sass';
 
 function App() {
-
-  return (
-    <Home/>
-  )
-    
+  return <Home />
 }
 
 export default App;
