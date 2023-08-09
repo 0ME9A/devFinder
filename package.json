@@ -1,6 +1,5 @@
 {
-  "name": "github_profiles",
-  "homepage": "https://0me9a.github.io/devFinder/",
+  "name": "dev_finder",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
