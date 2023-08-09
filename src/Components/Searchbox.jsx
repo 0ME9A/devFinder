@@ -45,6 +45,7 @@ const Searchbox = ({ setApi, theme, setInvalidUser }) => {
           value={inputVal}
           onChange={(e) => handleChange(e)}
           placeholder={"   Search Github username..."}
+          required
         />
         <button type="submit" title="search">
           search
