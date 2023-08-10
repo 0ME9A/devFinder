@@ -1,71 +1,59 @@
-# devFinder
+# GitHub Developer Finder
 
-devFinder is a tool to find github developers in easy ways. Find github users and view their profile.
+GitHub Developer Finder is a web application that allows you to find talented GitHub developers for your projects. You can search for developers based on their username and explore their profiles, repositories, and other information.
 
+## Table of Contents
 
-## Table of contents
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-- [Weather setup](#weather)
-- [Author](#author)
+## Demo
 
-## Overview
+You can see a live demo of the GitHub Developer Finder app [here](https://your-demo-url.com).
 
-### The challenge
+## Features
 
-Users should be able to:
+- Search for GitHub developers by username.
+- View detailed profiles of developers, including their avatar, bio, repositories, followers, and more.
+- Access links to developers' GitHub profiles, blogs, and social media.
+- Responsive design for optimal use on various devices.
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Search for GitHub users by their username
-- See relevant user information based on their search
-- Switch between light and dark themes
+## Installation
 
-### Screenshot
+To run the GitHub Developer Finder app locally, follow these steps:
 
-![Screenshot](https://raw.githubusercontent.com/0ME9A/screenshots/main/devFinder.png)
+1. Clone the repository: `git clone https://github.com/your-username/dev-finder.git`
+2. Navigate to the project directory: `cd dev-finder`
+3. Install dependencies: `npm install`
 
+## Usage
 
+1. Start the development server: `npm start`
+2. Open your web browser and go to: `http://localhost:3000`
 
-### Links
+## Technologies Used
 
-- [Solution URL: ](https://github.com/0ME9A/devFinder/)
-- [Live Site URL:](https://0me9a.github.io/devFinder/)
+- React: A JavaScript library for building user interfaces.
+- Axios: A promise-based HTTP client for making API requests.
+- React Helmet: A library for managing document head tags in React.
+- React Icons: A library of popular icon packs for React components.
+- SASS: A preprocessor scripting language that is interpreted or compiled into CSS.
 
-## My process
+## Contributing
 
-### Built with
+Contributions are welcome! If you find any issues or want to add new features, feel free to fork the repository and submit a pull request.
 
-- Semantic HTML5 markup
-- Flexbox
-- Lively first
-- Mobile-first workflow
-- [React js](https://reactjs.org) - JS library
-- [Sass](https://sass-lang.com/) - (stylesheet language)
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-name`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Open a pull request.
 
-### What I learned
-- API - [Github api](https://openweathermap.org/)
+## License
 
-
-### Useful resources
-
-- [Figma](https://figma.com/) This helped me for designing and predicting the code. I really liked this pattern and will use it going forward.
-
-## Author
-
-- Website - [OMEGA](https://ome9a.com)
-- Frontend Mentor - [@0me9a](https://www.frontendmentor.io/profile/0me9a)
-- Twitter - [@omega86735940](https://twitter.com/omega86735940)
-
-## Favorite place
-- [Github](https://www.github.com/0me9a)
-- [Front-end Mentor](https://www.frontendmentor.io/profile/0me9a)
-- [Figma](https://www.figma.com/@omega1)
-- [Hacker Rank](https://www.hackerrank.com/ome9a)
+This project is licensed under the [MIT License](LICENSE).
