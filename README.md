@@ -1,6 +1,6 @@
 # GitHub Developer Finder
 
-GitHub Developer Finder is a web application that allows you to find talented GitHub developers for your projects. You can search for developers based on their username and explore their profiles, repositories, and other information.
+GitHub Developer Finder is a web application that allows you to find talented GitHub developers for your projects. You can search for developers based on their usernames and explore their profiles, repositories, and other information.
 
 ## Table of Contents
 
@@ -14,12 +14,12 @@ GitHub Developer Finder is a web application that allows you to find talented Gi
 
 ## Demo
 
-You can see a live demo of the GitHub Developer Finder app [here](https://your-demo-url.com).
+You can see a live demo of the GitHub Developer Finder app [here](https://devfinder.ome9a.com).
 
 ## Features
 
 - Search for GitHub developers by username.
-- View detailed profiles of developers, including their avatar, bio, repositories, followers, and more.
+- View detailed profiles of developers, including their avatars, bio, repositories, followers, and more.
 - Access links to developers' GitHub profiles, blogs, and social media.
 - Responsive design for optimal use on various devices.
 
