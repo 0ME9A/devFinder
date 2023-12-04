@@ -1,0 +1,326 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/sass/style.sass ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Dark-txt {
+  fill: hsl(220, 41%, 10%) !important;
+  color: hsl(220, 41%, 10%) !important;
+}
+
+.Dark {
+  background-color: white !important;
+}
+.Dark button {
+  border-color: white !important;
+}
+.Dark input {
+  background-color: white !important;
+}
+.Light {
+  background-color: hsl(220, 42%, 20%) !important;
+}
+.Light button {
+  border-color: hsl(220, 42%, 20%) !important;
+}
+.Light input:focus {
+  background-color: hsl(220, 42%, 20%) !important;
+}
+
+.Light-txt {
+  fill: hsl(0, 0%, 90%) !important;
+  color: hsl(0, 0%, 90%) !important;
+}
+
+.root-Dark {
+  background-color: hsl(0, 0%, 90%) !important;
+}
+
+.root-Light {
+  background: hsl(220, 39%, 15%) !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 15px;
+  transition: 0.3s;
+  background: "navy";
+  scroll-behavior: smooth;
+  text-decoration: none !important;
+  font-size: 16px;
+  color: hsl(0, 0%, 90%);
+  font-weight: lighter;
+  text-transform: capitalize;
+}
+
+.root-child {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(220, 39%, 15%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  border-radius: 0;
+  overflow-y: auto;
+}
+.root-child .main-div {
+  width: 700px;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 15px;
+  flex-wrap: nowrap;
+  padding: 25px;
+}
+.root-child .main-div .menu, .root-child .main-div .search, .root-child .main-div .profile {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+.root-child .main-div .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
+  flex-wrap: nowrap;
+  padding: 15px 0;
+}
+.root-child .main-div .menu h1 {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 700;
+  text-transform: none;
+}
+.root-child .main-div .menu button {
+  font-size: 1rem;
+  color: hsl(0, 0%, 90%);
+  font-weight: normal;
+  text-transform: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: nowrap;
+  background: transparent;
+  border-color: transparent;
+  padding: 5px 10px;
+}
+.root-child .main-div .menu button:hover {
+  border-color: hsl(0, 0%, 90%);
+}
+.root-child .main-div .menu button span {
+  font-size: 0.8rem;
+}
+.root-child .main-div .search form {
+  display: flex;
+  position: relative;
+  background: hsl(220, 42%, 20%);
+}
+.root-child .main-div .search form input, .root-child .main-div .search form button {
+  border: none;
+  border-radius: 0;
+}
+.root-child .main-div .search form input:focus, .root-child .main-div .search form button:focus {
+  outline: none;
+}
+.root-child .main-div .search form input {
+  width: 100%;
+  height: auto;
+  background-color: rgba(30, 44, 73, 0);
+  font-size: 1rem;
+  color: hsl(0, 0%, 90%);
+  font-weight: normal;
+  text-transform: none;
+  padding: 15px 25px;
+  border-radius: 15px 0 0 15px;
+  position: relative;
+}
+.root-child .main-div .search form input:focus {
+  background-color: hsl(220, 42%, 20%);
+}
+.root-child .main-div .search form label {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: nowrap;
+  padding-left: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+.root-child .main-div .search form label .icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: transparent;
+  fill: rgb(21, 124, 241);
+}
+.root-child .main-div .search form button {
+  padding: 5px 15px;
+  border: 5px solid hsl(220, 42%, 20%);
+  background-color: hsl(220, 100%, 50%);
+  font-size: 1rem;
+  color: hsl(0, 0%, 90%);
+  font-weight: 400;
+  text-transform: capitalize;
+  border-radius: 15px;
+}
+.root-child .main-div .profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 15px;
+  flex-wrap: nowrap;
+  background: hsl(220, 42%, 20%);
+  padding: 35px;
+  border: none;
+}
+.root-child .main-div .profile .profile-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  background: transparent;
+  border-radius: 50%;
+}
+.root-child .main-div .profile .profile-data {
+  width: 100%;
+}
+.root-child .main-div .profile .profile-data .name-j-d {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  text-transform: capitalize;
+}
+.root-child .main-div .profile .profile-data .name-j-d h1 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  text-transform: none;
+}
+.root-child .main-div .profile .profile-data .name-j-d span {
+  font-size: 0.8rem;
+  color: grey;
+  font-weight: normal;
+  text-transform: none;
+}
+.root-child .main-div .profile .profile-data .userid span {
+  font-size: 0.8rem;
+  color: rgb(21, 124, 241);
+  font-weight: normal;
+  text-transform: none;
+}
+.root-child .main-div .profile .profile-data .bio {
+  padding: 25px 0px;
+}
+.root-child .main-div .profile .profile-data .bio p {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: lighter;
+  text-transform: none;
+}
+.root-child .main-div .profile .profile-data .rff {
+  background: hsl(220, 41%, 10%);
+  padding: 20px 25px;
+  display: flex;
+}
+.root-child .main-div .profile .profile-data .rff .row {
+  width: 33.3333333333%;
+}
+.root-child .main-div .profile .profile-data .rff .row h1 {
+  font-size: 0.8rem;
+}
+.root-child .main-div .profile .profile-data .rff .row h2 {
+  font-weight: 600;
+  padding-top: 5px;
+}
+.root-child .main-div .profile .profile-data .git-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 0;
+  flex-wrap: wrap;
+  padding-top: 15px;
+}
+.root-child .main-div .profile .profile-data .git-links .cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  width: 50%;
+}
+.root-child .main-div .profile .profile-data .git-links .cell .icon {
+  padding: 5px;
+  padding-right: 10px;
+}
+.root-child .main-div .profile .profile-data .git-links .cell .icon .icon-tag {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: transparent;
+}
+.root-child .main-div .profile .profile-data .git-links .cell span, .root-child .main-div .profile .profile-data .git-links .cell a {
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 90%);
+  font-weight: normal;
+  text-transform: none;
+}
+.root-child .main-div .profile .error strong, .root-child .main-div .profile .loading strong {
+  font-size: 1rem;
+  color: rgb(21, 124, 241);
+  font-weight: 800;
+  text-transform: none;
+}
+.root-child .main-div .profile .error h1, .root-child .main-div .profile .loading h1 {
+  font-size: 2rem;
+}
+.root-child .main-div .profile .loading {
+  animation: fadein 1s linear infinite;
+}
+.root-child .main-div .profile .loading strong {
+  color: hsl(0, 0%, 90%);
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  * {
+    font-size: 14px;
+  }
+  #root .main-div .profile {
+    flex-direction: column;
+  }
+  #root .main-div .profile .profile-data .name-j-d {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+}
