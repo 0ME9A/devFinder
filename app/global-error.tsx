@@ -9,8 +9,8 @@ export default function Error() {
       <section className="w-full text-center py-4 p-2">
         <p className="font-bold text-xl p-2">Error 404</p>
         <p className="font-thin">
-          Oops! It seems like the content you're looking for has vanished into
-          the digital abyss.
+          Oops! It seems like the content you&apos;re looking for has vanished
+          into the digital abyss.
         </p>
       </section>{" "}
       <button

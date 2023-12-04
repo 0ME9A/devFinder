@@ -1,6 +1,4 @@
 {
   "/page": "app/page.js",
-  "/manifest.webmanifest/route": "app/manifest.webmanifest/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/[dev]/page": "app/[dev]/page.js"
 }

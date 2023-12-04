@@ -9,7 +9,8 @@ export default function Error() {
       <section className="w-full text-center py-4 p-2">
         <p className="font-bold text-xl p-2">Error 404</p>
         <p className="font-thin">
-          Oops! It seems like the page you're looking for doesn't exist.
+          Oops! It seems like the page you&apos;re looking for doesn&apos;t
+          exist.
         </p>
       </section>{" "}
       <button
