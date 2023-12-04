@@ -11,8 +11,9 @@ export const NotFoundGithubUserId = ({
 }: notFoundGithubUserIdFace) => {
   const errorMsg = (
     <>
-      Dev: <strong className="text-red-500">"{userId || "N/A"}"</strong> not
-      found!!!
+      Dev:{" "}
+      <strong className="text-red-500">&ldquo;{userId || "N/A"}&rdquo;</strong>{" "}
+      not found!!!
     </>
   );
 
