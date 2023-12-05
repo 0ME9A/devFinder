@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /app/test/
+
+Sitemap: https://devfinder.ome9a.com/sitemap.xml
