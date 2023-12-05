@@ -1,8 +1,11 @@
 "use client";
 import { useDispatch, useSelector } from "react-redux";
 import { MdOutlineLightMode } from "react-icons/md";
+import { setTheme } from "@/RTK/slices/themeSlice";
 import { FiMoon } from "react-icons/fi";
 import { RootState } from "@/RTK/store";
+import { theme } from "@/utils/theme";
+import { useEffect } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -11,13 +14,9 @@ const Menu = () => {
   const { dark } = useSelector((state: RootState) => state.theme);
   const dispatch = useDispatch();
 
-  function setTheme(arg0: any): any {
-    throw new Error("Function not implemented.");
-  }
-
-  function theme(): any {
-    throw new Error("Function not implemented.");
-  }
+  useEffect(() => {
+    dispatch(setTheme(theme()));
+  }, [dispatch]);
 
   return (
     <nav className="w-full flex items-center justify-between p-1">
