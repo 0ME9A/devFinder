@@ -23,8 +23,6 @@ function DevProfile({ devId }: { devId?: string }) {
     ? isValidGitHubUserId(devId.slice(1))
     : true;
 
-  console.log(isValidateUserId);
-
   let returnError = <></>;
   if (!isValidateUserId || isError) {
     returnError = <NotFoundGithubUserId userId={devId || "N/A"} />;
