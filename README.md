@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DevFinder
+
+DevFinder is a web application that simplifies the process of discovering GitHub developers and exploring their profiles. Developed with Next.js, TypeScript, and Tailwind CSS, DevFinder delivers a smooth and efficient user experience. It utilizes the GitHub API to retrieve developer information, presenting it in a sleek and responsive user interface.
+
+## Features
+
+- **GitHub Developer Search:** Users can easily search for GitHub developers by entering their usernames. The application retrieves and showcases the developer's profile information.
+
+- **Theme Toggle:** DevFinder offers a theme toggle feature, allowing users to switch between light and dark themes. This enhances user customization and provides a visually appealing experience.
+
+- **Responsive Design:** The application is designed to be responsive, ensuring a consistent and user-friendly experience across various devices and screen sizes.
+
+- **History Section:** DevFinder includes a history section that tracks previously searched developers. This feature facilitates quick access to past searches.
 
 ## Getting Started
 
-First, run the development server:
+To run the DevFinder application locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the repository:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   git clone https://github.com/0ME9A/devfinder.git
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Navigate to the project directory:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   cd devfinder
+   ```
 
-## Learn More
+3. **Install dependencies:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Run the development server:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+   This will start the development server, and you can access the application at `http://localhost:3000` in your web browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js](https://nextjs.org/): A React framework for building server-side rendered and static web applications.
+
+- [TypeScript](https://www.typescriptlang.org/): A superset of JavaScript that adds static typing to the language.
+
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for building modern and responsive user interfaces.
+
+- [GitHub API](https://developer.github.com/v3/): The official GitHub REST API used to fetch developer data.
+
+## Contributing
+
+Thank you for considering contributing to DevFinder! Please follow these guidelines:
+
+1. **Fork the repository.**
+
+2. **Create a new branch:**
+
+   ```bash
+   git checkout -b feature/new-feature
+   ```
+
+3. **Make your changes and commit them:**
+
+   ```bash
+   git commit -m "Add new feature"
+   ```
+
+4. **Push to the branch:**
+
+   ```bash
+   git push origin feature/new-feature
+   ```
+
+5. **Open a pull request.**
+
+Read our [contribution guidelines](CONTRIBUTING.md) for more details.
+
+## Code of Conduct
+
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you agree to abide by its terms.
+
+## Issues
+
+If you encounter any issues or have suggestions for improvements, feel free to [open an issue](https://github.com/your-username/devfinder/issues).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
