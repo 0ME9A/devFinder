@@ -86,7 +86,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ## Issues
 
-If you encounter any issues or have suggestions for improvements, feel free to [open an issue](https://github.com/your-username/devfinder/issues).
+If you encounter any issues or have suggestions for improvements, feel free to [open an issue](https://github.com/0ME9A/devfinder/issues).
 
 ## License
 
