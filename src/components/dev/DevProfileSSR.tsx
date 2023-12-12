@@ -1,12 +1,17 @@
 "use client";
-import { NotFoundGithubUserId } from "../errors/NotFoundGithubUserId";
+import { setDevToHistory } from "@/RTK/slices/devsHistorySlice";
+import { useDispatch, useSelector } from "react-redux";
+import { NotFound } from "../errors/NotFound";
 import { devFace } from "@/types/devFace";
+import { RootState } from "@/RTK/store";
+import { useEffect } from "react";
 
+import setDevToLocalstorageII from "@/utils/setDevToLocalstorageII";
 import isValidGitHubUserId from "@/utils/isValidGitHubUserId";
 import Searchbox from "../Searchbox";
 import GitLinks from "./GitLinks";
-import Menu from "../menu/Menu";
 import DevInfo from "./DevInfo";
+import Menu from "../menu/Menu";
 import Image from "next/image";
 import Rff from "./rff";
 
@@ -19,17 +24,30 @@ function DevProfileSSR({
   data: devFace;
   status: number;
 }) {
+  const dispatch = useDispatch();
+  const history = useSelector((state: RootState) => state.devsHistory.history);
   const isValidateUserId: boolean = devId
     ? isValidGitHubUserId(devId.slice(1))
     : true;
 
   let returnError = <></>;
+
+  useEffect(() => {
+    // Code here will run after the initial render
+    if (status === 200) dispatch(setDevToHistory(data));
+  }, [status, data]); // Empty dependency array ensures it runs only once after initial render
+
+  useEffect(() => {
+    setDevToLocalstorageII(history);
+  }, [history]);
+
   if (status !== 200 || !isValidateUserId) {
-    returnError = <NotFoundGithubUserId userId={devId || "N/A"} />;
+    returnError = <NotFound userId={devId || "N/A"} />;
   }
+
   if (status === 403) {
     returnError = (
-      <NotFoundGithubUserId
+      <NotFound
         message={"devFinder rate limit exceeded. Please try after some time."}
         title="Error 403"
       />

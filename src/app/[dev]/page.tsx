@@ -1,9 +1,10 @@
 import { Metadata } from "next/types";
+import { Suspense } from "react";
 
-
+import DevHistoryContainer from "@/components/dev/history/DevHistoryContainer";
 import DevProfileSSR from "@/components/dev/DevProfileSSR";
+import Loading from "./loading";
 import Error from "./error";
-import React from "react";
 
 interface PageProps {
   params: {
@@ -56,6 +57,10 @@ const Page = async ({ params }: PageProps) => {
           data={response}
           status={request.status}
         />
+        <Suspense fallback={<Loading />}>
+          <DevHistoryContainer isSolo={false} />
+        </Suspense>
+        <div className="h-32"></div>
       </>
     );
   } else {
