@@ -1,14 +1,10 @@
-interface notFoundGithubUserIdFace {
+interface NotFoundFace {
   userId?: string;
   message?: string;
   title?: string;
 }
 
-export const NotFoundGithubUserId = ({
-  userId,
-  message,
-  title,
-}: notFoundGithubUserIdFace) => {
+export const NotFound = ({ userId, message, title }: NotFoundFace) => {
   const errorMsg = (
     <>
       Dev:{" "}

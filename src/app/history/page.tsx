@@ -1,13 +1,15 @@
 import DevHistoryContainer from "@/components/dev/history/DevHistoryContainer";
-import DevProfile from "@/components/dev/DevProfile";
+import Menu from "@/components/menu/Menu";
 import React from "react";
 
 function page() {
   return (
-    <div className="">
-      <DevProfile />
-      <DevHistoryContainer />
-    </div>
+    <>
+      <div className="py-5 p-2">
+        <Menu />
+      </div>
+      <DevHistoryContainer isSolo={true} />
+    </>
   );
 }
 

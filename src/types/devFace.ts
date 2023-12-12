@@ -32,3 +32,11 @@ export interface devFace {
   created_at: string;
   updated_at: string;
 }
+
+export interface basicDevFace {
+  id: number;
+  login: string;
+  name: string;
+  bio: string;
+  created_at: string;
+}

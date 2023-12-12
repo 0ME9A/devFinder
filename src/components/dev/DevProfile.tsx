@@ -1,6 +1,6 @@
 "use client";
-import { NotFoundGithubUserId } from "../errors/NotFoundGithubUserId";
 import { useGetUserIfValidQuery } from "@/RTK/RTKQuery/devQuery";
+import { NotFound } from "../errors/NotFound";
 
 import isValidGitHubUserId from "@/utils/isValidGitHubUserId";
 import Loading from "../loaders/Loading";
@@ -25,7 +25,7 @@ function DevProfile({ devId }: { devId?: string }) {
 
   let returnError = <></>;
   if (!isValidateUserId || isError) {
-    returnError = <NotFoundGithubUserId userId={devId || "N/A"} />;
+    returnError = <NotFound userId={devId || "N/A"} />;
   }
 
   return (
