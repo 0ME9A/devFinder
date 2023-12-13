@@ -53,5 +53,5 @@ const devHistorySlice = createSlice({
   },
 });
 
-export const { setDevToHistory, setDevsToHistory } = devHistorySlice.actions;
-export default devHistorySlice.reducer;
+// export const { setDevToHistory, setDevsToHistory } = devHistorySlice.actions;
+// export default devHistorySlice.reducer;
