@@ -4,20 +4,46 @@ import { IoIosArrowBack } from "react-icons/io";
 import { basicDevFace } from "@/types/devFace";
 import { MdZoomOutMap } from "react-icons/md";
 import { useRouter } from "next/navigation";
-import { useSelector } from "react-redux";
-import { RootState } from "@/RTK/store";
+import { useEffect, useState } from "react";
 
+import BasicLoading from "@/components/loaders/Loading";
 import Button from "@/components/extend/Button";
 import DevHistoryCard from "./DevHistoryCard";
-import React from "react";
 
 interface DevHistoryContainerFace {
   isSolo?: boolean;
 }
 
 function DevHistoryContainer({ isSolo }: DevHistoryContainerFace) {
-  const history = useSelector((state: RootState) => state.devsHistory.history);
+  const [history, setHistory] = useState<basicDevFace[]>([]);
+  const [isMount, setMount] = useState(false);
   const route = useRouter();
+
+  useEffect(() => {
+    const devHistory = localStorage.getItem("devHistory");
+    devHistory && setHistory(JSON.parse(devHistory));
+    setMount(true);
+  }, [isMount]);
+
+  if (!isMount) {
+    return <BasicLoading />;
+  }
+
+  let historyComponent;
+
+  if (history.length === 0) {
+    historyComponent = (
+      <div className="w-full justify-center col-span-full flex items-center">
+        <NotFound title="No Record Found..." message=" " />
+      </div>
+    );
+  } else {
+    const displayedHistory = isSolo ? history : history.slice(0, 12);
+
+    historyComponent = displayedHistory.map((item: basicDevFace) => (
+      <DevHistoryCard key={item.id} dev={item} />
+    ));
+  }
 
   return (
     <section className=" container p-2 duration-300">
@@ -44,21 +70,7 @@ function DevHistoryContainer({ isSolo }: DevHistoryContainerFace) {
           )}
         </header>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 p-2">
-          {history.length === 0 && (
-            <div className="w-full justify-center col-span-full flex items-center">
-              <NotFound title="No Record Found..." message=" " />
-            </div>
-          )}
-          {!isSolo &&
-            history
-              .slice(0, 12)
-              .map((item: basicDevFace) => (
-                <DevHistoryCard key={item.id} dev={item} />
-              ))}
-          {isSolo &&
-            history.map((item: basicDevFace) => (
-              <DevHistoryCard key={item.id} dev={item} />
-            ))}
+          {historyComponent}
         </div>
       </div>
     </section>

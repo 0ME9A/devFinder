@@ -3,7 +3,7 @@ import { Suspense } from "react";
 
 import DevHistoryContainer from "@/components/dev/history/DevHistoryContainer";
 import DevProfileSSR from "@/components/dev/DevProfileSSR";
-import Loading from "./loading";
+import BasicLoading from "@/components/loaders/Loading";
 import Error from "./error";
 
 interface PageProps {
@@ -51,17 +51,17 @@ const Page = async ({ params }: PageProps) => {
     const response = await request.json();
 
     return (
-      <>
+      <div className="flex flex-col justify-center min-h-screen">
         <DevProfileSSR
           devId={encodedValue}
           data={response}
           status={request.status}
         />
-        <Suspense fallback={<Loading />}>
-          <DevHistoryContainer isSolo={false} />
+        <Suspense fallback={<BasicLoading />}>
+          <DevHistoryContainer />
         </Suspense>
         <div className="h-32"></div>
-      </>
+      </div>
     );
   } else {
     return <Error />;

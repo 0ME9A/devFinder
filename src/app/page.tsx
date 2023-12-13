@@ -1,12 +1,15 @@
+import { Suspense } from "react";
 import DevHistoryContainer from "@/components/dev/history/DevHistoryContainer";
+import BasicLoading from "@/components/loaders/Loading";
 import DevProfile from "@/components/dev/DevProfile";
-import React from "react";
 
 function page() {
   return (
-    <div className="">
+    <div className="flex flex-col justify-center min-h-screen">
       <DevProfile />
-      <DevHistoryContainer />
+      <Suspense fallback={<BasicLoading />}>
+        <DevHistoryContainer />
+      </Suspense>
     </div>
   );
 }

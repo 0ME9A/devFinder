@@ -30,7 +30,7 @@ function DevProfile({ devId }: { devId?: string }) {
 
   return (
     <>
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center min-h-[50vh] lg:min-h-screen">
         <div className="max-w-2xl w-full p-2 mx-auto space-y-4">
           <Menu />
           <Searchbox />
