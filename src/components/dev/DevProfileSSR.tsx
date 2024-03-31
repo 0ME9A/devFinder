@@ -2,7 +2,6 @@
 import { NotFound } from "../errors/NotFound";
 import { devFace } from "@/types/devFace";
 import { useEffect } from "react";
-
 import setDevToLocalstorage from "@/utils/setDevToLocalstorage";
 import isValidGitHubUserId from "@/utils/isValidGitHubUserId";
 import Searchbox from "../Searchbox";
